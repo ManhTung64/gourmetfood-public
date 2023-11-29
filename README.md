@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Description about Project
+This project has 1 service and 3 microservices, this repository is main service, contains all api of this project. Howerver, you cannot view detail api of microservices because I don't provide here. 
+Gourmet Food is a culinary application, it has about 100 features such as recipe, meal plan, create meal plan with user's health status (disesae, age, activity mode, etc.), social network features, sponsor futures (payment ads package, manage ads post, etc.), dashboard with manage for administrator.  
+P/S: Because this project is my final project at Greenwich University, I cannot public some related documents as report.  
+
+
 ## Installation
 
 ```bash
