@@ -1,0 +1,57 @@
+import { IsNotEmpty, IsOptional, Length, Min } from "class-validator"
+
+export class AdsPackage{
+    @IsNotEmpty()
+    name:string
+    @IsNotEmpty()
+    @Min(1)
+    maxUser:number
+    @IsNotEmpty()
+    ratingDes:string
+    @IsNotEmpty()
+    @Min(0)
+    minPercent:number
+    @IsNotEmpty()
+    @Min(0)
+    maxPercent:number
+    @IsNotEmpty()
+    @Min(1)
+    activePost:number
+    @IsNotEmpty()
+    @Min(0)
+    banner:number
+    @IsNotEmpty()
+    dashboard:boolean
+    @IsNotEmpty()
+    @Min(1)
+    cost:number
+}
+export class UpdateAdsPackage{
+    @IsNotEmpty()
+    @Length(24)
+    _id:string
+    @IsOptional()
+    name:string
+    @IsOptional()
+    @Min(1)
+    maxUser:number
+    @IsOptional()
+    ratingDes:string
+    @IsOptional()
+    @Min(0)
+    minPercent:number
+    @IsOptional()
+    @Min(0)
+    maxPercent:number
+    @IsOptional()
+    @Min(1)
+    activePost:number
+    @IsOptional()
+    @Min(0)
+    banner:number
+    @IsOptional()
+    dashboard:boolean
+    @Min(0)
+    @IsOptional()
+    cost:number
+}
